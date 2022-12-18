@@ -202,11 +202,17 @@ div.link{
     font-size: 1.25em;
 }
 
-.address > h1{
+.sg-address{
+    min-height: 100vh;
+    height: auto;
+}
+.sg-address > h1{
     margin: 25vh 0 0 5rem;
 }
 .sec-address{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: 1.25rem 7rem 1.25rem 5rem;
     height: max-content;
@@ -250,6 +256,11 @@ div.link{
     margin: auto;
     font-size: 1rem;
 }
+.br{
+    display: block;
+    padding: 0.5ch;
+}
+
 #circle{
     position: absolute;
     width: 20vh;
@@ -315,12 +326,12 @@ div.link{
         padding: .25rem .75rem;
     }
 
-    .address{
+    .sg-address{
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    .address > h1{
+    .sg-address > h1{
         margin: 18vh 0 0 0;
         font-size: 1.5rem;
         text-align: center;
