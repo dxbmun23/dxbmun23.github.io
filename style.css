@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: #000; 
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow: auto;
+    overflow-x: hidden;
+}
+html{
+    background-color: #DBDADA;
+    overflow: hidden;
+}
+
+
+.not-visible{
+    display: none;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    color: #000;
+}
+.home{
+    overflow: hidden;
+    background: url("./images/un.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.home *,#small *{
+    color: #fff;
+    overflow: visible;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+
+    background-color: #121212;
+    padding: 1rem 5rem;
+}
+#small{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 15vh;
+    height: auto;
+    overflow: visible;
+}
+
+.home > nav{
+    background-color: transparent;
+    overflow: visible;
+}
+.link:hover{
+    color: #DBDADA;
+}
+.dropdown{
+    height: 100% !important;
+}
+.dropdown>button{
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.dropdown>*:hover{
+    color: #DBDADA;
+    border: none;
+}
+.dropdown > button{
+    height: 100%;
+}
+.dropdown-item:active{
+    background-color: #242424;
+}
+.brand > img{
+    height: 6rem;
+    aspect-ratio: 1/1;
+}
+
+hr{
+    position: static;
+    background-color: #fff;
+    border: none;
+    margin: 0 auto;
+    width: 90%;
+    height: 2px;
+    opacity: .5;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    width: 55%;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.social-media > img:hover{
+    filter: invert(28%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(99%) contrast(85%);
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    gap: 1rem;
+    overflow: visible;
+
+    width: 45%;
+}
+.nav-items>*{
+    height: 100%;
+}
+.nav-items > span{
+    cursor:pointer;
+}
+div.link{
+    overflow: visible;
+}
+.nav-items > select:focus{
+    outline: none;
+}
+.applications{
+    font-size: 1rem;
+    background-color: #8C1C13;
+    border: 1px solid #8C1C13;
+    outline: none;
+    padding: .5rem 1.5rem;
+    border-radius: 15px;
+    transition: .5s;
+}
+.applications:hover{
+    background-color: #A6302B;
+    transition: .5s;
+}
+.applications:active{
+    background-color: #7F1911;
+    transition: .1s;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5vh;
+    text-align: center;
+}
+.main > p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.main > h1{
+    font-size: 3.25em;
+}
+.main > h3{
+    font-size: 1.75em;
+    font-size: 500;
+}
+.main > hr{
+    width: 70%;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5vh;
+    text-align: center;
+}
+.countdown > hr{
+    width: 70%;
+}
+.count{
+    margin: 5vh auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.unit > h1{
+    font-size: 2.75em;
+}
+.unit > span{
+    font-size: 1.25em;
+}
+
+.address > h1{
+    margin: 25vh 0 0 5rem;
+}
+.sec-address{
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem 7rem 1.25rem 5rem;
+    height: max-content;
+}
+.sec-photo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: visible;
+}
+.sec-photo > img{
+    aspect-ratio: 3/2;
+    width: 90%;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    
+    color: #fff;
+    background-color: #8C1C13;
+    width: fit-content;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.names *{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.letter{
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+}
+#circle{
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    right: 0;
+    bottom: -100%;
+}
+
+@media screen and (max-width: 1000px){
+    .sec-address{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #circle{
+        width: 13vh;
+        height: 13vh;
+    }
+}
+@media screen and (max-width: 541px){
+    .home{
+        background-size: cover;
+    }
+    .header{
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+    .brand{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+        width: auto;
+    }
+    .social-media{
+        margin: 0 auto;
+    }
+    .nav-items *{
+        font-size: .75rem;
+    }
+    .main{
+        margin-top: 10vh;
+    }
+    .main > p {
+        font-size: 1.25em;
+        margin-bottom: 0;
+    }
+    .main > h1{
+        font-size: 2.75em;
+    }
+    .main > h3{
+        font-size: 1.25em;
+        font-size: 500;
+    }
+    .countdown{
+        margin-top: 5vh;
+    }
+    .count{
+        margin: 5vh auto;
+        width: 100%;
+    }
+    .applications{
+        padding: .25rem .75rem;
+    }
+
+    .address{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .address > h1{
+        margin: 18vh 0 0 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sec-address{
+        flex-direction: column;
+        padding: 1rem 1rem;
+        height: fit-content;
+    }
+    .sec-photo > img{
+        width: 100%;
+    } 
+    .letter{
+        text-align: justify;
+        height: fit-content;
+        overflow: visible;
+    }
+    .names{
+        font-size: .75rem;
+        padding: .5rem .75rem;
+    }
+    #circle{
+        display: none;
+    }
+}

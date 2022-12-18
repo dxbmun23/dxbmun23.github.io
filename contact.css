@@ -1,0 +1,123 @@
+.content{
+    height: auto;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-areas: 
+    "address address email phone"
+    "map map form form";
+
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+
+    background-color: #BBB9B9;
+    padding: 1rem;
+}
+.info > img{
+    width: 2rem;
+    height: 2rem;
+}
+.contact > form{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 1rem;
+    grid-template-areas: 
+    "name email"
+    "message message"
+    "button button";
+    justify-content: center;
+    align-items: center;
+
+    background-color: #BBB9B9;
+    padding: 1rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.form-group input{
+    height: 2rem;
+    outline: none;
+}
+.message textarea{
+    height: 4rem;
+    resize: none;
+    outline: none;
+}
+.form-group input:hover,
+.form-group input:focus,
+.message > textarea:hover, 
+.message > textarea:focus{
+    padding: 1ch;
+    border: 1.5px solid #8C1C13;
+}
+.submit{
+    grid-area: button;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: #8C1C13;
+    border: 1px solid #8C1C13;
+    outline: none;
+    padding: .5rem;
+}
+.submit:hover{
+    background-color: #A6302B;
+    transition: .5s;
+}
+.submit:active{
+    background-color: #7F1911;
+    transition: .1s;
+}
+@media screen and (max-width: 1000px){
+    .info > a{
+        font-size: .75rem;
+        text-align: center;
+    }
+    .address > a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 541px){
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        grid-template-areas: 
+        "address address"
+        "map map"
+        "email phone"
+        "form form";
+    
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        width: 90%;
+    }
+    .info{
+        height: 100%;
+    }
+    .info > a{
+        font-size: .65rem;
+        text-align: center;
+    }
+    .address > a{
+        font-size: 1rem;
+    }
+}

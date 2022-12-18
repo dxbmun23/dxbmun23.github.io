@@ -1,0 +1,35 @@
+#small{
+    display: flex;
+}
+#top-circle{
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    right: 0;
+    top: 18vh;
+}
+hr{
+    background-color: #00000080;
+    width: 65%;
+    margin-bottom: 4vh;
+}
+h1{
+    margin: 7vh 0 3vh 0;
+    text-align: center;
+}
+.brand > img{
+    height: 7rem;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1000px){
+    #top-circle{
+        width: 15vh;
+        height: 15vh;
+    }
+}
+@media screen and (max-width: 541px){
+    #top-circle{
+        display: none;
+    }
+}

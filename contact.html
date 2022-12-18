@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DXB MUN '22</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/icons/dxbmun logo white.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="subpage.css">
+        <link rel="stylesheet" href="contact.css">
+
+        <link rel="preload" href="loader.css" as="style" onload="this.rel='stylesheet'">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="content" id="content">
+            <img id="top-circle" src="./images/circle-top.svg">     
+            <div style="height: 22vh;"></div>
+            <h1>Contact Us!</h1>
+            <hr>
+            <div class="contact">
+                <div class="info address" style="grid-area: address;">
+                    <img src="./images/icons/pin-map.svg">
+                    <h3>Our Address</h3>
+                    <a>The Indian High School - Oud Metha Campus, Dubai, UAE</a>
+                </div>
+                <div class="info mail" style="grid-area: email;">
+                    <img src="./images/icons/envelope.svg">
+                    <h3>Email Us</h3>
+                    <a>sg@ihsdubai.org</a>
+                </div>
+                <div class="info phone" style="grid-area: phone;">
+                    <img src="./images/icons/instagramb.svg">
+                    <h3>Message Us</h3>
+                    <a>@dxbmun23</a>    
+                </div>
+                <div class="mapouter" style="grid-area: map;">
+                    <div class="gmap_canvas">
+                        <iframe style="width: 100%; height: 100%;" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Indian%20High%20School%20Dubai%20Oud%20Metha&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+                    </div>
+                </div>
+                <form class="form" style="grid-area: form;">
+                    <div class="form-group" style="grid-area: name;">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group" style="grid-area: email;">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="form-group message" style="grid-area: message;">
+                        <label for="message">Message</label>
+                        <textarea></textarea>
+                    </div>
+                    <button class="submit">Submit Message</button>
+                </form>
+            </div>
+            <nav class="navbar navbar-dark navbar-expand-lg header" id="small">
+                <div class="brand">
+                <img src="./images/icons/dxbmun logo white.png">
+                <div class="social-media">
+                    <img src="./images/icons/instagram.svg" onclick="window.open('https://www.instagram.com/dxbmun23/','_blank')" type="button">
+                    <img src="./images/icons/tiktok.svg" onclick="window.open('https://www.tiktok.com/@dxbmun23?_t=8YFFoq5HwJt&_r=1','_blank')" type="button">
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
+                    <span class="link" id="index">Home</span>
+                    <div class="nav-item dropdown" style="overflow: visible;">
+                        <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conference Details
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="width: 100%;">
+                        <li><a class="dropdown-item link" id="secretariat" href="#">Secretariat</a></li>
+                        <li><a class="dropdown-item link" id="committees" href="#">Committees</a></li>
+                        <!--<li><a class="dropdown-item link" id="resources" href="#">Resources</a></li>-->
+                        </ul>
+                    </div>
+                    <span class="link" id="contact">Contact</span>
+                    <span href="#"><button id="applications" class="link applications">Applications</button></span>
+                </div>
+            </nav>
+        </div>
+
+        <div id="preloader">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>  
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src='./nav.js' rel="preload"></script>
+    </body>
+</html>

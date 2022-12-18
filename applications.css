@@ -1,0 +1,57 @@
+.content{
+    height: 100vh;
+}
+.application-container{
+    width: 100%;
+    height: 45%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+.application{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em;
+    transition: 0.25s;
+}
+.application:first-child{
+    background: url("./images/un2.png");
+    background-position: center;
+    background-size: cover;
+
+    cursor: not-allowed;
+}
+.application:last-child{
+    background: url("./images/un1.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.application > *{
+    color: #fff;
+    margin: 0;
+    user-select: none;
+}
+.application:hover{
+    background: none;
+    background-color: #A6302B;
+}
+.application > p{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 541px){
+    .application-container{
+        flex-direction: column;
+        width: 85%;
+    }
+    .application{
+        height: 20vh;
+    }
+}

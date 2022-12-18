@@ -1,0 +1,52 @@
+.committees{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    overflow: visible;
+
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+.committee{
+    padding: 1.25rem;
+}
+.committee > img{
+    height: 40vh;
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.committee > h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    .committees{
+        grid-template-columns: 1fr 1fr;
+    }
+    .committee > img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .committee > h1{
+        margin: 0;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 541px){
+    .committees{
+        grid-template-columns: 1fr;
+    }
+    .committee > img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+}
