@@ -261,6 +261,22 @@ div.link{
     padding: 0.5ch;
 }
 
+.footer{
+    width: 100%;
+    padding: 1rem;
+    background-color: #121212;
+    font-size: .75rem;
+    gap: 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer > *{
+    color: #fff;
+}
+
 #circle{
     position: absolute;
     width: 20vh;
