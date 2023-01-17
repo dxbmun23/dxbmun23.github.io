@@ -44,6 +44,10 @@
 .application > p{
     font-size: 1.5rem;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+}
 
 @media screen and (max-width: 541px){
     .application-container{
