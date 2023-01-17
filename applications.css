@@ -19,13 +19,12 @@
 
     padding: 2em;
     transition: 0.25s;
+    cursor: not-allowed;
 }
 .application:first-child{
     background: url("./images/un2.png");
     background-position: center;
     background-size: cover;
-
-    cursor: not-allowed;
 }
 .application:last-child{
     background: url("./images/un1.png");
