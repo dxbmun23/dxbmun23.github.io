@@ -46,7 +46,8 @@
     font-size: 1.5rem;
 }
 footer{
-    margin-top: 5em;
+    position: fixed;
+    bottom: 0;
 }
 
 @media screen and (max-width: 541px){
