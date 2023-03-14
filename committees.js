@@ -1,6 +1,6 @@
 chairs = {
     "unsc": ["Naira Faisal", "Talha Raza", "Krithi Reddy", "United Nations Security Council", ["Discussing the impact of the Taiwan issue on international security","Resolving the Balochistan Crisis"]],
-    "disec": ["Retesh Pradeep", "Haniya Salim", "Bhuvi Joneja", "First General Assembly (DISEC)", ["Regulating the Lethal Autonomous Weapons System (LAWS)","The Proliferation and Possible Regulations of Private Military Contractors"]],
+    "disec": ["Rethesh Pradeep", "Haniya Salim", "Bhuvi Joneja", "First General Assembly (DISEC)", ["Regulating the Lethal Autonomous Weapons System (LAWS)","The Proliferation and Possible Regulations of Private Military Contractors"]],
     "unep": ["Nikin Noronha", "Eshal Ajmal", "Nirav Sadhvani", "United Nations Environmental Programme", ["Examining the environmental impacts of hydraulic fracking","Discussing the Sustainable Development of the Arctic Region"]],
     "uncsw": ["Siva Nanda Rajesh", "Maanasa Kirthivasan", "Afrah Shaikhji", "United Nations Commission on the Status of Women", ["Destigmatizing menstruation to achieve period equity", "Tackling underrepresentation of women in politics."]],
     "unccpcj": ["Sahil Ansari", "Rhythm Doshi", "Devansh Gupta", "United Nations Commission on Crime Prevention and Criminal Justice", ["Protection of the rights of crime victims with special emphasis on providing rehabilitation to their families","Addressing the root causes of terrorism in south east asia and discussing means for prevention and combat"]],
