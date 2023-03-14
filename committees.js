@@ -1,3 +1,4 @@
+const width = screen.width;
 chairs = {
     "unsc": ["Naira Faisal", "Talha Raza", "Krithi Reddy", "United Nations Security Council", ["Discussing the impact of the Taiwan issue on international security","Resolving the Balochistan Crisis"]],
     "disec": ["Rethesh Pradeep", "Haniya Salim", "Bhuvi Joneja", "First General Assembly (DISEC)", ["Regulating the Lethal Autonomous Weapons System (LAWS)","The Proliferation and Possible Regulations of Private Military Contractors"]],
@@ -12,69 +13,133 @@ chairs = {
 
 function HTMLGenerator(committee){
     committeeDetails = chairs[committee]
-    if(committee != "cc"){
-        generatedHTML = 
-        `<div class="details">
-            <div class="agenda">
-                <h1>Agendas</h1>
-                <div>
-                    <div><span>1.</span>${committeeDetails[4][0]}</div>
-                    <div><span>2.</span>${committeeDetails[4][1]}</div>
-                </div>
-            </div>
-            <div class="chairs">
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-2.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[1]}</h1>
-                        <h3>Chair</h3>
+    if(width>1024){
+        if(committee != "cc"){
+            generatedHTML = 
+            `<div class="details">
+                <div class="agenda">
+                    <h1>Agendas</h1>
+                    <div>
+                        <div><span>1.</span>${committeeDetails[4][0]}</div>
+                        <div><span>2.</span>${committeeDetails[4][1]}</div>
                     </div>
                 </div>
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-1.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[0]}</h1>
-                        <h3>Head Chair</h3>
+                <div class="chairs">
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-1.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[2]}</h1>
+                            <h3>Rapporteur</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-3.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[2]}</h1>
-                        <h3>Rapporteur</h3>
+            </div>`
+        } else{
+            generatedHTML = 
+            `<div class="details">
+                <div class="chairs">
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-1.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[2]}</h1>
+                            <h3>Rapporteur</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>`
+            </div>`
+        }
     } else{
-        generatedHTML = 
-        `<div class="details">
-            <div class="chairs">
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-2.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[1]}</h1>
-                        <h3>Chair</h3>
+        if(committee != "cc"){
+            generatedHTML = 
+            `<div class="details">
+                <div class="agenda">
+                    <h1>Agendas</h1>
+                    <div>
+                        <div><span>1.</span>${committeeDetails[4][0]}</div>
+                        <div><span>2.</span>${committeeDetails[4][1]}</div>
                     </div>
                 </div>
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-1.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[0]}</h1>
-                        <h3>Head Chair</h3>
+                <div class="chairs">
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-1.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[2]}</h1>
+                            <h3>Rapporteur</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-3.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[2]}</h1>
-                        <h3>Rapporteur</h3>
+            </div>`
+        } else{
+            generatedHTML = 
+            `<div class="details">
+                <div class="chairs">
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-1.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <div class="title">
+                            <h1>${committeeDetails[2]}</h1>
+                            <h3>Rapporteur</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>`
+            </div>`
+        }
     }
-    
     return generatedHTML
 }
 
@@ -82,7 +147,7 @@ $(".more-details").click(function(){
     Swal.fire({
         title: chairs[$(this).attr("id")][3],
         html: HTMLGenerator($(this).attr("id")),
-        width: "60vw",
+        width: `${width > 1024 ? "60vw" : "80vw"}`,
         confirmButtonText: 'Back',
         confirmButtonColor: "#8C1C13",
         scrollbarPadding: false,
