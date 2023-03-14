@@ -10,6 +10,7 @@
     width: 80%;
 }
 .committee{
+    position: relative;
     padding: 1.25rem;
 }
 .committee > img{
@@ -22,6 +23,76 @@
 .committee > h1{
     margin: 0;
     font-size: 1.5rem;
+}
+.more-details{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin: .5em 0 0 auto;
+
+    color: #A6302B;
+}
+.more-details:hover{
+    color: #C96862;
+    cursor: pointer;
+}
+.more-details:active{
+    color: #8C1C13;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.agenda{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.agenda > *{
+    text-align: left;
+}
+.agenda > h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.agenda > div{
+    display: flex;
+    flex-direction: column;
+}
+.agenda > div > div > span{
+    margin-right: 1ch;
+    font-weight: bold;
+}
+.chairs{
+    display: flex;
+    gap: 2rem;
+}
+.chair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.chair > img{
+    width: 100%;
+    height: 40vh;
+    aspect-ratio: 2/3;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title > *{
+    margin: 0;
+}
+.title > h1{
+    font-size: 1.5rem;
+}
+.title > h3{
+    font-size: 1rem;
 }
 
 
