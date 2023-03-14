@@ -29,7 +29,9 @@
     bottom: 0;
     display: block;
     margin: .5em 0 0 auto;
+    left: 50%; 
 
+    transform: translate(-50%, -50%);
     color: #A6302B;
 }
 .more-details:hover{
