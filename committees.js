@@ -50,18 +50,18 @@ function HTMLGenerator(committee){
         generatedHTML = 
         `<div class="details">
             <div class="chairs">
+            <div class="chair">
+                    <img src="./images/committees/chairs/${committee}-2.jpeg">
+                    <div class="title">
+                        <h1>${committeeDetails[1]}</h1>
+                        <h3>Chair</h3>
+                    </div>
+                </div>
                 <div class="chair">
                     <img src="./images/committees/chairs/${committee}-1.jpeg">
                     <div class="title">
                         <h1>${committeeDetails[0]}</h1>
                         <h3>Head Chair</h3>
-                    </div>
-                </div>
-                <div class="chair">
-                    <img src="./images/committees/chairs/${committee}-2.jpeg">
-                    <div class="title">
-                        <h1>${committeeDetails[1]}</h1>
-                        <h3>Chair</h3>
                     </div>
                 </div>
                 <div class="chair">
