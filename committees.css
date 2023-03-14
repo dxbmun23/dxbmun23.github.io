@@ -70,6 +70,8 @@
 .chairs{
     display: flex;
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 .chair{
     display: flex;
