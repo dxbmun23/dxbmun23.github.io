@@ -20,6 +20,7 @@
     padding: 2em;
     transition: 0.25s;
     cursor: not-allowed;
+    overflow: hidden;
 }
 .application:first-child{
     background: url("./images/un2.png");
