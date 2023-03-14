@@ -5,7 +5,7 @@ chairs = {
     "uncsw": ["Siva Nanda Rajesh", "Maanasa Kirthivasan", "Afrah Shaikhji", "United Nations Commission on the Status of Women", ["Destigmatizing menstruation to achieve period equity", "Tackling underrepresentation of women in politics."]],
     "unccpcj": ["Sahil Ansari", "Rhythm Doshi", "Devansh Gupta", "United Nations Commission on Crime Prevention and Criminal Justice", ["Protection of the rights of crime victims with special emphasis on providing rehabilitation to their families","Addressing the root causes of terrorism in south east asia and discussing means for prevention and combat"]],
     "who": ["Iffah Konain", "Senaara Sonu", "Surbhi Sharma", "World Health Organization", ["The Question of Refining the Healthcare Industries with a special emphasis on global accessability","Addressing the issue of counterfeit medicines and deliberating the necessary reforms required in the pharmaceutical industry"]],
-    "unhrc": ["Ahaan Paul", "Naisha Rajani", "Saurav Talukdar", "United Nations Human Rights Council", ["",""]],
+    "unhrc": ["Ahaan Paul", "Naisha Rajani", "Saurav Talukdar", "United Nations Human Rights Council", ["Promoting and safeguarding the fundamental rights of journalists","Evaluating the effectiveness of capital punishment as a viable means of justice"]],
     "ipc": ["Amritha Anil", "Shravan Nair", "Fathima Sooraj", "International Press Corps", ["The infiltration of opinionated journalism in fact based media","The increase in societal distrust towards commercial media"]],
     "cc": ["Baden Paiva", "Annika Das", "Solai Vishwanath", "Crisis Committee"],
 } 
