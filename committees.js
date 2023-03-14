@@ -1,10 +1,10 @@
 chairs = {
     "unsc": ["Naira Faisal", "Talha Raza", "Krithi Reddy", "United Nations Security Council", ["Discussing the impact of the Taiwan issue on international security","Resolving the Balochistan Crisis"]],
     "disec": ["Ayaan", "Haniya", "Bhuvi", "Disarmament and International Security", ["Regulating the Lethal Autonomous Weapons System (LAWS)","The Proliferation and Possible Regulations of Private Military Contractors"]],
-    "unep": ["Nikin Noronha", "Eshal", "Nirav", "United Nations Environmental Programme", ["Examining the environmental impacts of hydraulic fracking","Discussing the Sustainable Development of the Arctic Region"]],
+    "unep": ["Nikin Noronha", "Eshal Ajmal", "Nirav Sadhvani", "United Nations Environmental Programme", ["Examining the environmental impacts of hydraulic fracking","Discussing the Sustainable Development of the Arctic Region"]],
     "uncsw": ["Siva Nanda Rajesh", "Maanassa", "Afrah", "United Nations Commission on the Status of Women", ["Destigmatizing menstruation to achieve period equity", "Tackling underrepresentation of women in politics."]],
     "unccpcj": ["Sahil Ansari", "Rhythm Doshi", "Devansh", "United Nations Commission on Crime Prevention and Criminal Justice", ["Protection of the rights of crime victims with special emphasis on providing rehabilitation to their families","Addressing the root causes of terrorism in south east asia and discussing means for prevention and combat"]],
-    "who": ["Iffah Konain", "Senaara Sara Sonu", "Surbhi", "World Health Organization", ["The Question of Refining the Healthcare Industries with a special emphasis on global accessability","Addressing the issue of counterfeit medicines and deliberating the necessary reforms required in the pharmaceutical industry"]],
+    "who": ["Iffah Konain", "Senaara Sara Sonu", "Surbhi Sharma", "World Health Organization", ["The Question of Refining the Healthcare Industries with a special emphasis on global accessability","Addressing the issue of counterfeit medicines and deliberating the necessary reforms required in the pharmaceutical industry"]],
     "unhrc": ["Ahaan Paul", "Naisha", "Saurav Talukdar", "United Nations Human Rights Council", ["",""]],
     "ipc": ["Amritha Anil", "Shravan Nair", "Fathima", "International Press Corps", ["The infiltration of opinionated journalism in fact based media","The increase in societal distrust towards commercial media"]],
     "cc": ["Baden Paiva", "Annika Das", "Solai", "Crisis Committee"],
