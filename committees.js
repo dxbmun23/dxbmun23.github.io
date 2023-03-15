@@ -29,7 +29,7 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-2.jpeg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
-                            <h3>Chair</h3>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
@@ -56,7 +56,7 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-2.jpeg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
-                            <h3>Chair</h3>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
@@ -99,7 +99,7 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-2.jpeg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
-                            <h3>Chair</h3>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
@@ -126,7 +126,7 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-2.jpeg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
-                            <h3>Chair</h3>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
