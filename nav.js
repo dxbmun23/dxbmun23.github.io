@@ -1,5 +1,7 @@
 $('.link').click(function(e){
-    window.location.href=`./${e.target.id}.html`;
+    if(e.target.id != "resources"){
+        window.location.href=`./${e.target.id}.html`;
+    }
 })
 
 //loader
