@@ -36,6 +36,7 @@
     color: #fff;
     margin: 0;
     user-select: none;
+    width: 100%;
 }
 .application:hover{
     background: none;
