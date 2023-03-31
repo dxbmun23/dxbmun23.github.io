@@ -5,6 +5,7 @@
     width: 100%;
     min-height: 45%;
     margin: 0 auto;
+    padding: 1rem;
 
     display: flex;
     gap: 2rem;
