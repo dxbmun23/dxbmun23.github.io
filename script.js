@@ -27,7 +27,7 @@ const observer = new window.IntersectionObserver(([entry]) => {
 })
 observer.observe(document.querySelector('#header'));
 
-const date = new Date(2023, 4, 19).getTime(); //mm(0-January, 11-December) dd 
+const date = new Date(2023, 11, 8).getTime(); //mm(0-January, 11-December) dd 
 const month = new Date().getMonth();
 // countdown
 let timer = setInterval(function() {
