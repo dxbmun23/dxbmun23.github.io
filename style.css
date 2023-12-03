@@ -297,7 +297,7 @@ div.link{
 }
 @media screen and (max-width: 541px){
     .home{
-        background-size: cover;
+        background-size: contain;
     }
     .header{
         width: 90%;
