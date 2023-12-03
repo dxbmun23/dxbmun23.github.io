@@ -1,14 +1,18 @@
 const width = screen.width;
 chairs = {
-    "unsc": ["Naira Faisal", "Talha Raza", "Krithi Reddy", "United Nations Security Council", ["Discussing the impact of the Taiwan issue on international security","Resolving the Balochistan Crisis"]],
-    "disec": ["Rethesh Pradeep", "Haniya Salim", "Bhuvi Joneja", "First General Assembly (DISEC)", ["Regulating the Lethal Autonomous Weapons System (LAWS)","The Proliferation and Possible Regulations of Private Military Contractors"]],
-    "unep": ["Nikin Noronha", "Eshal Ajmal", "Nirav Sadhvani", "United Nations Environmental Programme", ["Examining the environmental impacts of hydraulic fracking","Discussing the Sustainable Development of the Arctic Region"]],
-    "uncsw": ["Siva Nanda Rajesh", "Maanasa Kirthivasan", "Afrah Shaikhji", "United Nations Commission on the Status of Women", ["Destigmatizing menstruation to achieve period equity", "Tackling underrepresentation of women in politics."]],
-    "unccpcj": ["Sahil Ansari", "Rhythm Doshi", "Devansh Gupta", "United Nations Commission on Crime Prevention and Criminal Justice", ["Protection of the rights of crime victims with special emphasis on providing rehabilitation to their families","Addressing the root causes of terrorism in south east asia and discussing means for prevention and combat"]],
-    "who": ["Iffah Konain", "Senaara Sonu", "Surbhi Sharma", "World Health Organization", ["The Question of Refining the Healthcare Industries with a special emphasis on global accessability","Addressing the issue of counterfeit medicines and deliberating the necessary reforms required in the pharmaceutical industry"]],
-    "unhrc": ["Aahan Paul", "Naisha Rajani", "Saurav Talukdar", "United Nations Human Rights Council", ["Promoting and safeguarding the fundamental rights of journalists","Evaluating the effectiveness of capital punishment as a viable means of justice"]],
-    "ipc": ["Amritha Anil", "Shravan Nair", "Fathima Sooraj", "International Press Corps", ["The infiltration of opinionated journalism in fact based media","The increase in societal distrust towards commercial media"]],
-    "cc": ["Baden Paiva", "Annika Das", "Solai Vishwanath", "Crisis Committee"],
+    "unsc": ["Mohammad Mushaf Khan", "Taher Mustafa Mukadam", "Sarah Mohammad", "United Nations Security Council", ["Resolving tensions between India and Canada with a special focus on the Khalistani movement","Examining the geopolitical situation in the Middle East and its ramifications on global security"]],
+    "disec": ["Aarya Shedge", "Aarav Dutt", "Tanya Grace Girish", "First General Assembly (DISEC)", ["Addressing the Use and Impact of Chemical Warfare with Special Emphasis on the use of White Phosphorus","Enhancing Regional Security and Peacekeeping Efforts on the Korean Peninsula"]],
+    "unhrc": ["Shenz Mohammed", "Rachel Grace Gonsalves", "Satvik Linu", "United Nations Human Rights Council", ["Combating Humanitarian Atrocities in Asia","Discussing the Mitigation of Cartel Exploitation in South and Central America"]],
+    "unep": ["Vaishnav Krishnakumar", "Atharva Kokane", "Vanishri Shekawat", "United Nations Environmental Programme", ["Promoting Equitable Environmental Policies and Safeguarding Indigenous Rights", "Discussing Geoengineering Strategies as a Measure to Combat Climate Change"]],
+    "uncsw": ["Amritha Anil", "Zoie Gabrielle Symss", "Agrima Sood", "United Nations Commission on the Status of Women", ["Addressing Women's Victimization and Exploitation with an Emphasis on Gender-Based Violence","Ensuring Access to Medical and Humanitarian Aid for Women in Conflict Zones, with a Focus on Regions Affected by Long-standing Conflicts"]],
+    "icj": ["Aditi Nair", "Manas Kankarej", "Jamila Bhagat", "International Court of Justice", ["Prevention and Punishment of the Crime of Genocide (The Gambia V. Myanmar)","Maritime Delimitation in the Caribbean Sea (Nicaragua V. Colombia)"]],
+    "cc": ["Baden Paiva", "Ayush Vijay", "Hishaam Basheer", "War Cabinet"],
+    "fcc": ["Brett John Carvalho", "Tarang Bhatia", "Vedant Das", "Futuristic Crisis Committee", ["Addressing the Impact of Artificial General Intelligence on Global Economic Disparities"]],
+    "iaea": ["Ansh Uchil", "Naamna Singh", "Lavanya Sunil", "International Atomic Energy Agency", ["Addressing the Proliferation of Nuclear Weapons while Mitigating the Potential Emergence of Nuclear Conflicts in Developing Nations","Addressing Strategic Preparedness in Anticipation of the Potential Integration of Al in Nuclear Warfare"]],
+    "unodc": ["Naira Faizal", "Nitya Deep", "Yaniv Lakhani", "United Nations Office on Drugs and Crime", ["Discussing the Emergence of New Synthetic Drugs and Reforms to combat the same.","Addressing the Involvement of Organized Criminal Groups in Human Trafficking of Migrants and Acts of Violence Against Them"]],
+    "sochum": ["Haya Khalid", "Samarth Raval", "Aman Khaleel", "Third General Assembly (SOCHUM)", ["Promoting Inclusivity and Safeguarding the Rights of Ethnic Minorities in Pakistan","Addressing Mechanisms for Ensuring Safety and Repatriation of Individuals Impacted by Terrorism, Armed Conflict, and Gang Violence"]],
+    "ipmc": ["Retesh Pradeep Kumar", "Diya Mohan", "Aditya Mishra", "Indian Prime Minister Cabinet"],
+    "ipc": ["Aishani Kundu", "Alaiza Jesia", "", "International Press Corps", ["Discussing the Moral Implications of Al Fabrication of Public Figures in Media"]],
 } 
 
 function HTMLGenerator(committee){
