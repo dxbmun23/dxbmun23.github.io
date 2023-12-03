@@ -18,7 +18,7 @@ chairs = {
 function HTMLGenerator(committee){
     committeeDetails = chairs[committee]
     if(width>1024){
-        if(committee != "cc"){
+        if(committee != "cc" || committee != "csw"){
             generatedHTML = 
             `<div class="details">
                 <div class="agenda">
@@ -47,7 +47,34 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-3.jpg">
                         <div class="title">
                             <h1>${committeeDetails[2]}</h1>
-                            <h3>Rapporteur</h3>
+                            <h3>Co-Chair</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        } else if (committee == "csw"){
+            generatedHTML = 
+            `<div class="details">
+                <div class="agenda">
+                    <h1>Agendas</h1>
+                    <div>
+                        <div><span>1.</span>${committeeDetails[4][0]}</div>
+                        <div><span>2.</span>${committeeDetails[4][1]}</div>
+                    </div>
+                </div>
+                <div class="chairs">
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-1.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                 </div>
@@ -74,7 +101,7 @@ function HTMLGenerator(committee){
                         <img src="./images/committees/chairs/${committee}-3.jpg">
                         <div class="title">
                             <h1>${committeeDetails[2]}</h1>
-                            <h3>Rapporteur</h3>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                 </div>
