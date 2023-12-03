@@ -113,17 +113,17 @@ function HTMLGenerator(committee){
             `<div class="details">
                 <div class="chairs">
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-2.jpg">
-                        <div class="title">
-                            <h1>${committeeDetails[1]}</h1>
-                            <h3>Co-Chair</h3>
-                        </div>
-                    </div>
-                    <div class="chair">
                         <img src="./images/committees/chairs/${committee}-1.jpg">
                         <div class="title">
                             <h1>${committeeDetails[0]}</h1>
                             <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
@@ -174,17 +174,17 @@ function HTMLGenerator(committee){
                 </div>
                 <div class="chairs">
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-2.jpg">
-                        <div class="title">
-                            <h1>${committeeDetails[1]}</h1>
-                            <h3>Co-Chair</h3>
-                        </div>
-                    </div>
-                    <div class="chair">
                         <img src="./images/committees/chairs/${committee}-1.jpg">
                         <div class="title">
                             <h1>${committeeDetails[0]}</h1>
                             <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-2.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[1]}</h1>
+                            <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
