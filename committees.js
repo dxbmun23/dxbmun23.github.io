@@ -18,16 +18,9 @@ chairs = {
 function HTMLGenerator(committee){
     committeeDetails = chairs[committee]
     if(width>1024){
-        if(committee != "cc" || committee != "csw" || committee != "ipmc"){
+        if(committee == "cc" || committee == "ipmc"){
             generatedHTML = 
             `<div class="details">
-                <div class="agenda">
-                    <h1>Agendas</h1>
-                    <div>
-                        <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
-                    </div>
-                </div>
                 <div class="chairs">
                     <div class="chair">
                         <img src="./images/committees/chairs/${committee}-2.jpg">
@@ -79,9 +72,16 @@ function HTMLGenerator(committee){
                     </div>
                 </div>
             </div>`
-        } else{
+        } else { 
             generatedHTML = 
             `<div class="details">
+                <div class="agenda">
+                    <h1>Agendas</h1>
+                    <div>
+                        <div><span>1.</span>${committeeDetails[4][0]}</div>
+                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                    </div>
+                </div>
                 <div class="chairs">
                     <div class="chair">
                         <img src="./images/committees/chairs/${committee}-2.jpg">
@@ -108,33 +108,26 @@ function HTMLGenerator(committee){
             </div>`
         }
     } else{
-        if(committee != "cc" || committee != "csw" || committee != "ipmc"){
+        if(committee == "cc" || committee == "ipmc"){
             generatedHTML = 
             `<div class="details">
-                <div class="agenda">
-                    <h1>Agendas</h1>
-                    <div>
-                        <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
-                    </div>
-                </div>
                 <div class="chairs">
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-1.jpeg">
-                        <div class="title">
-                            <h1>${committeeDetails[0]}</h1>
-                            <h3>Head Chair</h3>
-                        </div>
-                    </div>
-                    <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <img src="./images/committees/chairs/${committee}-2.jpg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
                             <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <img src="./images/committees/chairs/${committee}-1.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpg">
                         <div class="title">
                             <h1>${committeeDetails[2]}</h1>
                             <h3>Co-Chair</h3>
@@ -169,26 +162,33 @@ function HTMLGenerator(committee){
                     </div>
                 </div>
             </div>`
-        } else{
+        } else { 
             generatedHTML = 
             `<div class="details">
+                <div class="agenda">
+                    <h1>Agendas</h1>
+                    <div>
+                        <div><span>1.</span>${committeeDetails[4][0]}</div>
+                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                    </div>
+                </div>
                 <div class="chairs">
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-1.jpeg">
-                        <div class="title">
-                            <h1>${committeeDetails[0]}</h1>
-                            <h3>Head Chair</h3>
-                        </div>
-                    </div>
-                    <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-2.jpeg">
+                        <img src="./images/committees/chairs/${committee}-2.jpg">
                         <div class="title">
                             <h1>${committeeDetails[1]}</h1>
                             <h3>Co-Chair</h3>
                         </div>
                     </div>
                     <div class="chair">
-                        <img src="./images/committees/chairs/${committee}-3.jpeg">
+                        <img src="./images/committees/chairs/${committee}-1.jpg">
+                        <div class="title">
+                            <h1>${committeeDetails[0]}</h1>
+                            <h3>Head Chair</h3>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./images/committees/chairs/${committee}-3.jpg">
                         <div class="title">
                             <h1>${committeeDetails[2]}</h1>
                             <h3>Co-Chair</h3>
