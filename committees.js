@@ -45,7 +45,7 @@ function HTMLGenerator(committee){
                     </div>
                 </div>
             </div>`
-        } else if (committee == "csw"){
+        } else if (committee == "ipc"){
             generatedHTML = 
             `<div class="details">
                 <div class="agenda">
@@ -135,7 +135,7 @@ function HTMLGenerator(committee){
                     </div>
                 </div>
             </div>`
-        } else if (committee == "csw"){
+        } else if (committee == "ipc"){
             generatedHTML = 
             `<div class="details">
                 <div class="agenda">
