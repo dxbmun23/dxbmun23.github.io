@@ -18,7 +18,7 @@ chairs = {
 function HTMLGenerator(committee){
     committeeDetails = chairs[committee]
     if(width>1024){
-        if(committee != "cc" || committee != "csw"){
+        if(committee != "cc" || committee != "csw" || committee != "ipmc"){
             generatedHTML = 
             `<div class="details">
                 <div class="agenda">
