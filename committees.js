@@ -52,7 +52,7 @@ function HTMLGenerator(committee){
                     <h1>Agendas</h1>
                     <div>
                         <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                        ${committeeDetails[4][1] ? `<div><span>2.</span>${committeeDetails[4][1]}</div>` : ""}
                     </div>
                 </div>
                 <div class="chairs">
@@ -79,7 +79,7 @@ function HTMLGenerator(committee){
                     <h1>Agendas</h1>
                     <div>
                         <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                        ${committeeDetails[4][1] ? `<div><span>2.</span>${committeeDetails[4][1]}</div>` : ""}
                     </div>
                 </div>
                 <div class="chairs">
@@ -142,7 +142,7 @@ function HTMLGenerator(committee){
                     <h1>Agendas</h1>
                     <div>
                         <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                        ${committeeDetails[4][1] ? `<div><span>2.</span>${committeeDetails[4][1]}</div>` : ""}
                     </div>
                 </div>
                 <div class="chairs">
@@ -169,7 +169,7 @@ function HTMLGenerator(committee){
                     <h1>Agendas</h1>
                     <div>
                         <div><span>1.</span>${committeeDetails[4][0]}</div>
-                        ${committeeDetails[4][1] ? "<div><span>2.</span>${committeeDetails[4][1]}</div>" : ""}
+                        ${committeeDetails[4][1] ? `<div><span>2.</span>${committeeDetails[4][1]}</div>` : ""}
                     </div>
                 </div>
                 <div class="chairs">
