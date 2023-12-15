@@ -59,5 +59,13 @@ let timer = setInterval(function() {
     <div class="unit">
         <h1>${hours}</h1>
         <span>Hours</span>
+    </div>
+    <div class="unit">
+        <h1>${minutes}</h1>
+        <span>Minutes</span>
+    </div>
+    <div class="unit">
+        <h1>${seconds}</h1>
+        <span>Seconds</span>
     </div>`
 }, 1000);
