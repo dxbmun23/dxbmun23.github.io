@@ -34,7 +34,7 @@ let timer = setInterval(function() {
     // get today's date
     const today = new Date().getTime();
     console.log(new Date(date), new Date(today))
-    if(new Date(date).getDate() == new Date(today).getDate() && new Date(date).getMonth() == new Date(today).getMonth()){
+    if(new Date(date).getDate() >= new Date(today).getDate() && new Date(date).getMonth() >= new Date(today).getMonth()){
         document.getElementById("count").innerHTML =
         `<div class="unit">
             <h1>0</h1>
