@@ -34,51 +34,30 @@ let timer = setInterval(function() {
     // get today's date
     const today = new Date().getTime();
     console.log(new Date(date), new Date(today))
-    if(new Date(date).getDate() >= new Date(today).getDate() && new Date(date).getMonth() >= new Date(today).getMonth()){
-        document.getElementById("count").innerHTML =
-        `<div class="unit">
-            <h1>0</h1>
-            <span>Days</span>
-        </div>
-        <div class="unit">
-            <h1>0</h1>
-            <span>Hours</span>
-        </div>
-        <div class="unit">
-            <h1>0</h1>
-            <span>Minutes</span>
-        </div>
-        <div class="unit">
-            <h1>0</h1>
-            <span>Seconds</span>
-        </div>`;
+    // get the difference
+    let diff;
+    diff = date - today;
+    let days, hours, minutes, second;
+    //math
+    if (diff <= 0){
+        days = 0
+        hours = 0
+        minutes = 0
+        seconds = 0
     } else {
-        // get the difference
-        let diff;
-        diff = date - today;
-        console.log(diff)
-        // math
-        let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((diff % (1000 * 60)) / 1000);
-        // display
-        document.getElementById("count").innerHTML =
-        `<div class="unit">
-            <h1>${days}</h1>
-            <span>Days</span>
-        </div>
-        <div class="unit">
-            <h1>${hours}</h1>
-            <span>Hours</span>
-        </div>
-        <div class="unit">
-            <h1>${minutes}</h1>
-            <span>Minutes</span>
-        </div>
-        <div class="unit">
-            <h1>${seconds}</h1>
-            <span>Seconds</span>
-        </div>`;
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((diff % (1000 * 60)) / 1000);
     }
+    // display
+    document.getElementById("count").innerHTML =
+    `<div class="unit">
+        <h1>${days}</h1>
+        <span>Days</span>
+    </div>
+    <div class="unit">
+        <h1>${hours}</h1>
+        <span>Hours</span>
+    </div>`
 }, 1000);
